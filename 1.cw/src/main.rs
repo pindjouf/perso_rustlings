@@ -1,37 +1,54 @@
-//import args parser, patharg confirm thing, filesystem manip operations module
 use clap::Parser;
 use patharg::InputArg;
 use std::fs;
 
-//define args structure
 #[derive(Parser, Debug)]
 #[command(version, about)]
 struct Args {
-    //#[arg(short, long, required = true)]
-    //flag: String,
+    #[arg(short, long)]
+    lines: bool,
+
+    #[arg(short, long)]
+    words: bool,
+
+    #[arg(short, long)]
+    chars: bool,
 
     #[arg(required = true)]
     file: InputArg,
 }
 
 fn main() {
-    //fetch args into var
     let args = Args::parse();
     
-    //convert arg into string
     let file_path = args.file.to_string();
    
-    //match args.flag {
-    //
-    //}
-
-    //return, read & print file content if ok else return and print err
-    match fs::read_to_string(file_path) {
-        Ok(content) => println!("Content:\n{}\n", content),
+    match fs::read_to_string(&file_path) {
+        Ok(content) => {
+            match (args.lines, args.words, args.chars) {
+                (true, false, false) => println!("There are {} lines in {}", count_lines(&content), file_path),
+                (false, true, false) => println!("There are {} words in {}", count_words(&content), file_path),
+                (false, false, true) => println!("There are {} characters in {}", count_chars(&content), file_path),
+                _ => println!("Nothing."),
+            }
+        }
         Err(e) => println!("Error reading file: {}", e),
     }
 }
 
-//fn counter(arg: Type) -> RetType {
-//    todo!();
-//}
+fn count_lines(content: &str) -> usize {
+    content.lines().count()
+}
+
+fn count_words(content: &str) -> usize {
+    content.split_whitespace().count()
+}
+
+fn count_chars(content: &str) -> usize {
+    let mut char_count = 0;
+    for _i in content.chars() {
+        char_count += 1;
+    }
+    "usize" ;
+    char_count
+}
