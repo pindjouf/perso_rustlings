@@ -4,12 +4,12 @@ This project is done in the same style as rustlings which states that it's sole 
 
 ## Short Rust CLI Course Outline
 
-- [ ] **1. Basic File I/O Project -- [cw](https://github.com/pindjouf/perso_rustlings/tree/master/1.cw)**
+- [x] **1. Basic File I/O Project -- [cw](https://github.com/pindjouf/perso_rustlings/tree/master/1.cw)**
 
     **Goal:** Write a program that reads from a text file and counts the number of lines, words, and characters in it (similar to the wc command in Unix).\
     **What You'll Learn:** File handling, string manipulation, and iterators in Rust.
 
-- [ ] **2. CLI Argument Parsing with Clap**
+- [x] **2. CLI Argument Parsing with Clap -- [cw](https://github.com/pindjouf/perso_rustlings/tree/master/1.cw)**
 
     **Goal:** Extend the basic file I/O project to accept command-line arguments for the file path and an optional flag --words to print only the word count.\
     **What You'll Learn:** Working with the clap crate for parsing CLI arguments, structuring CLI programs, and handling optional arguments.
