@@ -1,6 +1,6 @@
 # Personal Rustlings 🦀❤️
 
-This project is done in the same style as rustlings which states that it's sole purpose is to get you used to reading and writing Rust code. This will be focusing on building the necessary skills to rebuild [kof](https://github.com/pindjouf/kof) in rust.
+This project is done in the same style as rustlings which states that it's sole purpose is to get you used to reading and writing Rust code. This will be focusing on building the necessary skills to rebuild [kof](https://github.com/pindjouf/kof) in rust, and developing an MVP for it in ~9 days.
 
 ## Short Rust CLI Course Outline
 
@@ -46,3 +46,11 @@ This project is done in the same style as rustlings which states that it's sole 
 
     **Goal:** Build a Rust CLI that syncs files between two directories (local to remote). You can create a mock "server" directory for this.\
     **What You'll Learn:** Implementing file synchronization logic, handling differences between directories, and introducing networking features, which will be key for Kof’s sync functionality.
+
+##### Timeline:
+
+**Day 1:** get familiar with rust -> [cli with rust](https://rust-cli.github.io/book/index.html)
+**Day 2-9:** build
+**Day 10:** make banger linkedin post, article on personal blog and poast on X (formerly twitter) -> "what started as a joke now serves as an outlet for actual projects" when talking about [noirchapeau.com](https://noirchapeau.com)
+
+
