@@ -49,8 +49,8 @@ This project is done in the same style as rustlings which states that it's sole 
 
 ##### Timeline:
 
-**Day 1:** get familiar with rust -> [cli with rust](https://rust-cli.github.io/book/index.html)
-**Day 2-9:** build
+**Day 1:** get familiar with rust -> [cli with rust](https://rust-cli.github.io/book/index.html)\
+**Day 2-9:** build\
 **Day 10:** make banger linkedin post, article on personal blog and poast on X (formerly twitter) -> "what started as a joke now serves as an outlet for actual projects" when talking about [noirchapeau.com](https://noirchapeau.com)
 
 
