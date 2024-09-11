@@ -47,10 +47,8 @@ This project is done in the same style as rustlings which states that it's sole 
     **Goal:** Build a Rust CLI that syncs files between two directories (local to remote). You can create a mock "server" directory for this.\
     **What You'll Learn:** Implementing file synchronization logic, handling differences between directories, and introducing networking features, which will be key for Kof’s sync functionality.
 
-##### Timeline:
+#### Timeline:
 
-**Day 1:** get familiar with rust -> [cli with rust](https://rust-cli.github.io/book/index.html)\
-**Day 2-9:** build\
-**Day 10:** make banger linkedin post, article on personal blog and poast on X (formerly twitter) -> "what started as a joke now serves as an outlet for actual projects" when talking about [noirchapeau.com](https://noirchapeau.com)
-
-
+**Days 1-3:** Focus on file I/O and argument parsing with small projects like the file counter, grep clone extension, and note-taking CLI.\
+**Days 4-6:** Move into version control simulation and directory structure management.\
+**Days 7-9:** Focus on syncing and Git automation to prepare for the final Kof implementation.
