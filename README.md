@@ -1,6 +1,6 @@
 # Personal Rustlings 🦀❤️
 
-This project is done in the same style as rustlings which states that it's sole purpose is to get you used to reading and writing Rust code. This will be focusing on building the necessary skills to rebuild [kof](https://github.com/pindjouf/kof) in rust, and developing an MVP for it in ~9 days.
+This project is done in the same style as [rustlings](https://github.com/rust-lang/rustlings) which states that it's sole purpose is to get you used to reading and writing Rust code. This will be focusing on building the necessary skills to rebuild [kof](https://github.com/pindjouf/kof) in rust, and developing an MVP for it in ~9 days.
 
 ## Short Rust CLI Course Outline
 
