@@ -14,7 +14,7 @@ This project is done in the same style as [rustlings](https://github.com/rust-la
     **Goal:** Extend the basic file I/O project to accept command-line arguments for the file path and an optional flag --words to print only the word count.\
     **What You'll Learn:** Working with the clap crate for parsing CLI arguments, structuring CLI programs, and handling optional arguments.
 
-- [ ] **3. Basic Note-Taking CLI**
+- [x] **3. Basic Note-Taking CLI** -- [kof](https://github.com/pindjouf/kof)
 
     **Goal:** Build a simple note-taking app that creates and appends notes to a file.\
     The app should allow you to:
