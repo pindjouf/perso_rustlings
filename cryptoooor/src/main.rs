@@ -9,13 +9,15 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let nonce = Aes256Gcm::generate_nonce(&mut OsRng);
     let cipher = Aes256Gcm::new(&key);
 
-    let message = load_file("message.txt").expect("damn");
+    fs::write("key", cipher);
 
-    let ciphertext = cipher.encrypt(&nonce, message.as_ref()).expect("can't encrypt");
+    let message = load_file("message.txt").expect("Couldn't load your file");
+
+    let ciphertext = cipher.encrypt(&nonce, message.as_ref()).expect("Can't encrypt your file");
     let _ = fs::write("message.bin", ciphertext);
 
     let cryptoFile = load_file("message.bin").expect("damn");
-    let plaintext = cipher.decrypt(&nonce, cryptoFile.as_ref()).expect("can't decrypt your file");
+    let plaintext = cipher.decrypt(&nonce, cryptoFile.as_ref()).expect("Can't decrypt your file");
     let _ = fs::write("decrypted.txt", plaintext);
 
     Ok(())
@@ -23,4 +25,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 fn load_file(file: &str) -> Result<Vec<u8>, std::io::Error> {
     fs::read(file)
+}
+
+fn encrypt(arg: Type) -> RetType {
+    todo!();
+}
+
+fn decrypt(arg: Type) -> RetType {
+    todo!();
 }
